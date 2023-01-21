@@ -1,0 +1,2 @@
+const e=document.querySelector(".form"),n=document.querySelector(".box");e.addEventListener("submit",(function(e){e.preventDefault();const{elements:{input_form:t}}=e.currentTarget;!async function(e){const t=await fetch(`https://api.agify.io?name=${e}`);(function(e){const{age:t,count:o,name:a}=e,c=`<div>\n  age ${t}, count ${o}, name ${a}\n</div>`;n.insertAdjacentHTML("beforeend",c)})(await t.json())}(t.value.trim())}));
+//# sourceMappingURL=index.05890cd8.js.map
