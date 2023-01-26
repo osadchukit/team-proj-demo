@@ -1,8 +1,16 @@
 
+const studentsRef = document.querySelector('.students');
+const boxRef = document.querySelector('.box');
 
+studentsRef.addEventListener('click', slider)
 
+console.log(studentsRef);
 
-
+function slider(e) {
+e.preventDefault()
+    boxRef.classList.toggle('box_active');
+    console.log(boxRef);
+}
 
 
 

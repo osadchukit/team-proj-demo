@@ -1,0 +1,150 @@
+/* body {
+    font-family: 'Roboto', sans-serif;
+    color: var(--title-color);
+    background: var(--main-site-background);
+}
+
+ul {
+    margin: 0;
+    padding-left: 0;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: currentColor;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0px;
+}
+
+.address {
+    font-style: normal;
+}
+
+img {
+    display: block;
+}
+
+
+
+.container {
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.portfolio {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+
+
+
+
+
+.goods__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+
+
+.card-goods__wrap {
+    position: relative;
+    overflow: hidden;
+}
+
+.card-goods__item {
+    padding: 20px 24px;
+    border: 1px solid #eeeeee;
+    border-top: none;
+    background-color: #ffffff;
+}
+
+.card-goods__title {
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    color: inherit;
+    margin-bottom: 4px;
+}
+
+.card-goods__text {
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.03em;
+    color: var(--main-text-color);
+}
+
+.card-goods__link {
+    display: block;
+    transition: box-shadow var(--transition-duration) var(--timig-function);
+}
+
+.card-goods__link:hover,
+.card-goods__link:focus {
+        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+            1px 4px 6px rgba(0, 0, 0, 0.16);
+        outline: 1px solid var(--accent-color);
+    }
+
+.card-goods__link:hover .card-goods__hover-text,
+.card-goods__link:focus .card-goods__hover-text {
+        transform: translateY(0);
+    }
+
+
+.card-goods__hover-text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 18px;
+    line-height: 1.56;
+    letter-spacing: 0.03em;
+    color: var(--hero-title-color);
+    padding: 63px 24px 0px 24px;
+    background: rgba(33, 150, 243, 0.9);
+    height: 101%;
+    transform: translateY(100%);
+    transition: transform var(--transition-duration) var(--timig-function);
+} */
+
+
+
+/* --------------- */
+
+
+
+
+
+
+.box {
+    display: flex;
+    position: fixed;
+    bottom: 77;
+    right: 0;
+    opacity: 0;
+    transition: all 0.3s cubic-bezier(.17, .04, .03, .94);
+    transform: translate(100%, 0px);
+}
+
+
+.box_active {
+    z-index: 2;
+    opacity: 1;
+    transform: translate(0, 0);
+    cursor: pointer;
+}
