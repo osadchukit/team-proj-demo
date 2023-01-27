@@ -1,4 +1,4 @@
-/* body {
+body {
     font-family: 'Roboto', sans-serif;
     color: var(--title-color);
     background: var(--main-site-background);
@@ -33,7 +33,7 @@ img {
     display: block;
 }
 
-
+/* 
 
 .container {
     width: 1200px;
@@ -141,10 +141,74 @@ img {
     transform: translate(100%, 0px);
 }
 
+.box_img{
+    height: 100px;
+}
 
 .box_active {
     z-index: 2;
     opacity: 1;
     transform: translate(0, 0);
     cursor: pointer;
+}
+
+.teams_desk{
+    /* width: 300px; */
+    display: f;
+        width: 100%;
+        margin: auto;
+        padding: 0;
+        position: fixed;
+        left: 0;
+        right: 0;
+        top: 90px;
+        box-sizing: border-box;
+        opacity: 0;
+        pointer-events: none;
+        transition: all 0.8s cubic-bezier(.17, .04, .03, .94);
+        z-index: 0;
+        /* background: #e8e8e8; */
+        transform: translate(0, -550px);
+}
+
+.teams_desk_active{
+    opacity: 1;
+    pointer-events: all;
+    z-index: 5;
+    width: 300px;
+    transform: translate(0, 0);
+    cursor: pointer;
+}
+
+.teams_desk_title{
+padding-top: 20px;
+padding-left: 20px;
+
+}
+
+.teams_desk_text{
+padding-top: 10px;
+padding-left: 20px;
+}
+
+.soc_icons{
+    display: flex;
+    gap: 30px;
+    padding: 0 20px;
+    justify-content: space-between;
+}
+
+.soc_icon{
+    /* display: flex; */
+    width: 100px;
+    padding-top: 35px;
+}
+
+
+
+.in {
+    position: relative;
+        top: -12px;
+        left: 12px;
+
 }
