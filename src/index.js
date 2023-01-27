@@ -1,15 +1,89 @@
+const teams = [
+  {
+    name: 'Ivan Osadchuk',
+    fotoDesktop: './images/teams/Ivan_Osadchuk_desktop.jpg',
+    fotoBig: './images/teams/Ivan_Osadchuk_big.png',
+    text: 'Hi!',
+    facebook: '',
+    linkend: '',
+    github: '',
+  },
+  {
+    name: 'Artymuk Iryna',
+    fotoDesktop: './images/teams/Artymuk_Iryna_desktop.jpg',
+    fotoBig: './images/teams/Artymuk_Iryna_big.png',
+    text: 'Hi!',
+    facebook: '',
+    linkend: '',
+    github: '',
+  },
+  {
+    name: 'Olena Semenenko',
+    fotoDesktop: './images/teams/Olena_Semenenko_desktop.jpg',
+    fotoBig: './images/teams/Olena_Semenenko_big.png',
+    text: 'We are all a little bit of wizards.',
+    facebook: '@elena_semenenko',
+    linkend: 'www.linkedin.com/in/olena-semenenko-137987263',
+    github: 'https://github.com/olena-semenenko',
+  },
+  {
+    name: 'Viktoriia Lehusova',
+    fotoDesktop: './images/teams/Viktoriia_Lehusova_desktop.jpg',
+    fotoBig: './images/teams/Viktoriia_Lehusova_big.png',
+    text: 'Role in project - developer.',
+    facebook: '@yashabaker',
+    linkend: 'http://linkedin.com/in/Viktoriia_Lehusova-616b95244',
+    github: 'https://github.com/Viktoriia-Lehusova',
+  },
+  {
+    name: 'Iakiv Pekarskyi',
+    fotoDesktop: './images/teams/Iakiv_Pekarskyi_desktop.jpg',
+    fotoBig: './images/teams/Iakiv_Pekarskyi_big.png',
+    text: 'I am happy travelling soul.',
+    facebook: '@lehusova',
+    linkend: 'none',
+    github: 'https://github.com/iakivpekarskyi',
+  },
+  {
+    name: 'Ihor Statsenko',
+    fotoDesktop: './images/teams/Ihor_Statsenko_desktop.jpg',
+    fotoBig: './images/teams/Ihor_Statsenko_big.png',
+    text: 'none',
+    facebook: 'none',
+    linkend: 'none',
+    github: 'none',
+  },
+  {
+    name: 'Vitalii Nozhenko',
+    fotoDesktop: './images/teams/Vitalii_Nozhenko_desktop.jpg',
+    fotoBig: './images/teams/Vitalii_Nozhenko_big.png',
+    text: 'none',
+    facebook: 'none',
+    linkend: 'none',
+    github: 'none',
+  },
+];
+
 
 const studentsRef = document.querySelector('.students');
 const boxRef = document.querySelector('.box');
+const teamsDesk = document.querySelector('.teams_desk');
 
 studentsRef.addEventListener('click', slider)
 
-console.log(studentsRef);
 
 function slider(e) {
 e.preventDefault()
+    const markup = teams
+      .map(
+        teams =>
+          `<li><img src="${teams.fotoDesktop}" alt="${teams.name}" class="box_img"></li>`
+      )
+      .join('');
+boxRef.innerHTML = markup;
+
+    console.log(markup);
     boxRef.classList.toggle('box_active');
-    console.log(boxRef);
 }
 
 
