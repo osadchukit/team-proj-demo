@@ -2,7 +2,7 @@ const teams = [
   {
     name: 'Ivan Osadchuk',
     fotoDesktop: './images/teams/Ivan_Osadchuk_desktop.jpg',
-    fotoBig: './images/teams/Ivan_Osadchuk_big.png',
+    fotoBig: './images/teams/Ivan_Osadchuk.png',
     text: 'Hi!',
     facebook: '',
     linkend: '',
@@ -11,7 +11,7 @@ const teams = [
   {
     name: 'Artymuk Iryna',
     fotoDesktop: './images/teams/Artymuk_Iryna_desktop.jpg',
-    fotoBig: './images/teams/Artymuk_Iryna_big.png',
+    fotoBig: './images/teams/Artymuk_Iryna.png',
     text: 'Hi!',
     facebook: '',
     linkend: '',
@@ -20,7 +20,7 @@ const teams = [
   {
     name: 'Olena Semenenko',
     fotoDesktop: './images/teams/Olena_Semenenko_desktop.jpg',
-    fotoBig: './images/teams/Olena_Semenenko_big.png',
+    fotoBig: './images/teams/Olena_Semenenko.png',
     text: 'We are all a little bit of wizards.',
     facebook: '@elena_semenenko',
     linkend: 'www.linkedin.com/in/olena-semenenko-137987263',
@@ -29,7 +29,7 @@ const teams = [
   {
     name: 'Viktoriia Lehusova',
     fotoDesktop: './images/teams/Viktoriia_Lehusova_desktop.jpg',
-    fotoBig: './images/teams/Viktoriia_Lehusova_big.png',
+    fotoBig: './images/teams/Viktoriia_Lehusova.png',
     text: 'Role in project - developer.',
     facebook: '@yashabaker',
     linkend: 'http://linkedin.com/in/Viktoriia_Lehusova-616b95244',
@@ -38,7 +38,7 @@ const teams = [
   {
     name: 'Iakiv Pekarskyi',
     fotoDesktop: './images/teams/Iakiv_Pekarskyi_desktop.jpg',
-    fotoBig: './images/teams/Iakiv_Pekarskyi_big.png',
+    fotoBig: './images/teams/Iakiv_Pekarskyi.png',
     text: 'I am happy travelling soul.',
     facebook: '@lehusova',
     linkend: 'none',
@@ -47,7 +47,7 @@ const teams = [
   {
     name: 'Ihor Statsenko',
     fotoDesktop: './images/teams/Ihor_Statsenko_desktop.jpg',
-    fotoBig: './images/teams/Ihor_Statsenko_big.png',
+    fotoBig: './images/teams/Ihor_Statsenko.png',
     text: 'none',
     facebook: 'none',
     linkend: 'none',
@@ -56,7 +56,7 @@ const teams = [
   {
     name: 'Vitalii Nozhenko',
     fotoDesktop: './images/teams/Vitalii_Nozhenko_desktop.jpg',
-    fotoBig: './images/teams/Vitalii_Nozhenko_big.png',
+    fotoBig: './images/teams/Vitalii_Nozhenko.png',
     text: 'none',
     facebook: 'none',
     linkend: 'none',
