@@ -64,7 +64,6 @@ const teams = [
   },
 ];
 
-
 const studentsRef = document.querySelector('.students');
 const boxRef = document.querySelector('.box');
 const teamsDesk = document.querySelector('.teams_desk');
@@ -73,32 +72,39 @@ studentsRef.addEventListener('click', slider)
 
 
 function slider(e) {
-e.preventDefault()
-    const markup = teams
-      .map(
-        teams =>
-          `<li><img src="${teams.fotoDesktop}" alt="${teams.name}" class="box_img"></li>`
-      )
-      .join('');
-boxRef.innerHTML = markup;
-
-    console.log(markup);
-    boxRef.classList.toggle('box_active');
+  e.preventDefault()
+  boxRef.innerHTML = markupLine(teams);
+  boxRef.classList.toggle('box_active');
+  
+  console.log(boxRef);
+console.log(markupOneOfTeam(teams));
 }
 
+function markupLine(teams) {
+  return teams.map(
+      (teams, index) =>
+        `<li><a href=""><img src="${teams.fotoDesktop}" alt="${teams.name}" class="box_img" id=${index}></a></li>`
+    )
+    .join('');}
 
 
 
-
-
-
-
-
-
-
-
-
-
+function markupOneOfTeam(teams) {
+  return teams
+    .map(
+      (teams, index) =>
+        `<div class="teams_desk teams_desk_active" id=${index}>
+      <img src="${teams.fotoBig}" alt="" width="400px">
+      <h2 class="teams_desk_title">${teams.name}</h2>
+      <p class="teams_desk_text">${teams.text}</p>
+      <div class="soc_icons">
+        <a href="${teams.facebook}"><img src="./images/f.png" alt="f" class="soc_icon f"></a>
+        <a href="${teams.linkend}"><img src="./images/in.png" alt="in" class="soc_icon in"></a>
+        <a href="${teams.github}"><img src="./images/t.png" alt="t" class="soc_icon t"></a>
+      </div>`
+    )
+    .join('');
+}
 
 
 
