@@ -134,7 +134,7 @@ img {
 .box {
     display: flex;
     position: fixed;
-    bottom: 77;
+    bottom: 67;
     right: 0;
     opacity: 0;
     transition: all 0.3s cubic-bezier(.17, .04, .03, .94);
@@ -152,21 +152,39 @@ img {
     cursor: pointer;
 }
 
+.fon{
+    height: 1000px;
+    width: 1000px;
+    pointer-events: none;
+    background: #e8e8e8;
+    opacity: 0;
+    transition: all 0.8s cubic-bezier(.17, .04, .03, .94);
+}
+
+.fon_active {
+    height: 1000px;
+    width: 1000px;
+        pointer-events: all;
+    background: #e8e8e8;
+    opacity: 1;
+    
+}
+
 .teams_desk{
     /* width: 300px; */
-    display: f;
+    display: flexbox;
         width: 100%;
         margin: auto;
         padding: 0;
         position: fixed;
         left: 0;
         right: 0;
-        top: 90px;
+        top: 80px;
         box-sizing: border-box;
         opacity: 0;
         pointer-events: none;
         transition: all 0.8s cubic-bezier(.17, .04, .03, .94);
-        z-index: 0;
+        /* z-index: 0; */
         /* background: #e8e8e8; */
         transform: translate(0, -550px);
 }
